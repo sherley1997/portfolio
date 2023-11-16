@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
+
+:root{
+    --background-color: #f1dce7;
+    --text-color: #000000;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 3% 15%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+p{
+    line-height: 25px;
+}
+
+/* NavBar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    font-weight: 500;
+}
+nav ul li{
+    margin-left: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+}
+nav ul li span{
+    position: absolute;
+    top: -5px;
+    right: -28px;
+}
+
+/* Header index*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+header .header-gauche{
+    flex: 6;
+    margin-right: 50px;
+}
+header .header-gauche small{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+header .header-gauche h1{
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+header .header-gauche .links{
+    margin-top: 80px;
+}
+header .header-gauche .links a{
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    margin-right: 40px;
+    font-weight: bold;
+}
+header .header-gauche .links a span{
+    position: absolute;
+    top: -5px;
+    right: -28px;
+}
+
+header .header-droite{
+    flex: 5;
+}
+header .header-droite img{
+    width: 100%;
+    border-radius: 100px;
+}
+/* Page site, création et réalisation */
+.projet{
+    text-align: center;
+    font-size: 40px;
+}
+/* .maquettes{
+    text-align: center;   
+    display: flex;
+    flex-direction: row;
+} */
+
+/* Main */
+.about{
+    margin-top: 150px;
+}
+.about p{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.images{
+    margin-top: 80px;
+}
+.images .images-card{
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.images .images-card .images-gauche{
+    margin-right: 40px;
+}
+.images .images-card .images-gauche img{
+    height: 50%;
+    width: 100%;
+}
+
+/* Footer */
+footer{
+    margin-top: 100px;
+}
+footer p{
+    font-size: 15px;
+}
+
+@media screen and (max-width: 880px) {
+    .images .images-card {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 621px) {
+    header{
+        flex-direction: column-reverse;
+    }
+    header .header-gauche{
+        margin-right: O;
+    }
+    header .header-droite{
+        margin-bottom: 40px;
+    }
+    header .header-droite img{
+        width: 250px;
+    }
+    .images .images-card .header-gauche img{
+        width: 100%;
+    }
+}
