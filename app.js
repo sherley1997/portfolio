@@ -1,3 +1,4 @@
+// Mode Sombre ou Lumière
 let modeSombre = false;
 
 function changeModeSombre(){
